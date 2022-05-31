@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print(end = "{}".format("".join(map(chr, range(97, 123)))));
+for c in range(97, 123):
+    print(end = "{}".format(chr(c));
