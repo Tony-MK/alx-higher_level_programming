@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def uppercase(s: str):
-    for c in s:
-        o = ord(c)
-        print(end=chr(o - 32) if o >= 97 and o <= 122 else c)
-    print(end="\n")
+    print("".join([
+        chr(ord(c) - 32) if ord(c) >= 97 and ord(c) <= 122 else c
+        for c in s
+    ]))
