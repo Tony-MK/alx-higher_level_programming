@@ -12,6 +12,7 @@ if __name__ == "__main__":
     elif sys.argv[2] not in OPERATORS:
         sys.stderr.write(ERROR_1)
         sys.exit(1)
-
-    print(" ".join(list(map(str, sys.argv[1:]))), end=" = ")
-    print(OPERATORS[sys.argv[2]](int(sys.argv[1]), int(sys.argv[3])))
+    a: int = int(sys.argv[1])
+    b: int = int(sys.argv[3])
+    print("{:d} {} {:d}".format(a, sys.argv[2], b), end=" = ")
+    print(OPERATORS[sys.argv[2]](a, b))
