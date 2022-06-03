@@ -7,7 +7,7 @@ if __name__ == "__main__":
     ERROR_1 = "Unknown operator. Available operators: +, -, * and /\n"
 
     if len(sys.argv) != 4:
-        sys.stderr.write("Usage: ./100-my_calculator.py <a> <operator> <b>\n")
+        sys.stderr.write("Usage: " + argv[0] + " <a> <operator> <b>\n")
         sys.exit(1)
     elif sys.argv[2] not in OPERATORS:
         sys.stderr.write(ERROR_1)
