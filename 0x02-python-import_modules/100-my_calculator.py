@@ -8,10 +8,10 @@ if __name__ == "__main__":
 
     if len(sys.argv) != 4:
         print(end="Usage: " + sys.argv[0] + " <a> <operator> <b>\n")
-        sys.exit(1)
+        exit(1)
     elif sys.argv[2] not in OPERATORS:
         print(end=ERROR_1)
-        sys.exit(1)
+        `exit(1)
     a: int = int(sys.argv[1])
     b: int = int(sys.argv[3])
     op: str = sys.argv[2]
