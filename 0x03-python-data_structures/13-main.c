@@ -1,6 +1,6 @@
-'#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include lists.h
+#include "lists.h"
 
 /**
  * main - check the code for
@@ -25,11 +25,11 @@ int main(void)
     print_listint(head);
 
     if (is_palindrome(&head) == 1)
-        printf(Linked list is a palindromen);
+        printf("Linked list is a palindromen\n");
     else
-        printf(Linked list is not a palindromen);
+        printf("Linked list is not a palindromen\n");
 
     free_listint(head);
 
     return (0);
-}'
+}
