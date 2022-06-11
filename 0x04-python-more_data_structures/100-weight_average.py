@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-
-def square_matrix_simple(matrix=[]):
-    return list(map(lambda m: list(map(lambda x: x**2, m)), matrix))
+def weight_average(my_list):
+    weights_sum: int = sum(map(lambda x: x[1], my_list))
+    return sum(map(lambda x: x[0] * x[1], my_list)) / weights_sum
