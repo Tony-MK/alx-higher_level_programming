@@ -6,6 +6,6 @@ def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
         return True
-    except Exception as e:
-        sys.stdout(e.__str__())
+    except (TypeError, ValueError) as e:
+        sys.stderr.write("{:s}".format(e))
         return False
