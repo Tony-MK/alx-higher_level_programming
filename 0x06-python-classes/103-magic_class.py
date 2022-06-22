@@ -11,9 +11,8 @@ class MagicClass:
     """
     class MagicClass - A class for a circle object
     """
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """Initializing the class with radius as only argument"""
-        self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
             raise TypeError("radius must be a number")
         self.__radius = radius
