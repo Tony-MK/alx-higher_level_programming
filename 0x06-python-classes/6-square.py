@@ -42,7 +42,7 @@ class Square:
 
     def my_print(self):
         """Prints square object to STDOUT """
-        print("\n" * self.position[1] + "\n".join([
+        print(("\n" * self.position[1] + "\n".join([
             " " * self.position[0] + "#" * self.size
-            ] * self.size)
+            ] * self.size)) if self.size > 0 else ""
         )
