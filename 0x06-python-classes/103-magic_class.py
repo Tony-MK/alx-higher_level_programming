@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import math
-
 """
 class MagicClass - A class for a 2D circle shape
 """
+
+
+import math
 
 
 class MagicClass:
