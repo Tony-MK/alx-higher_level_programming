@@ -9,5 +9,5 @@ class LockedClass:
     def __setattr__(self, key, value):
         """Attribute Setter (only first_name is permited)"""
         if key != "first_name":
-            raise AttributeError(self, key)
+            raise AttributeError(key, self)
         self.first_name = value
