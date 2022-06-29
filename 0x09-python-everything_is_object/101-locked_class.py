@@ -10,4 +10,4 @@ class LockedClass:
         """Attribute Setter (only first_name is permited)"""
         if key != "first_name":
             raise AttributeError(name=key, obj=self)
-        self.first_name = value
+        self.__dict__["first_name"] = value
