@@ -3,7 +3,7 @@
 "read_file" function module
 """
 
+
 def read_file(filename=""):
-    with open(filename, "r", "UTF-8") as f:
-        for l in f:
-            print(l)
+    with open(filename, "r", encoding="UTF-8") as f:
+        print(f.read())
